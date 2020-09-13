@@ -42,10 +42,35 @@ header img{
   width: 100%;
   height: 700px;
   margin: 0 auto;
-  background: url(../img/mv_pc.png);
+  background: url(/images/mv_pc.png);
   background-position: 50% 50%;
   background-size: cover;
+  background-repeat: no-repeat;
 }
+.is-ie-svg{
+  display: none;
+}
+img{
+  border-style: none;
+}
+.mv-section .mv-svg.mv-svg-pc{
+  width: 910px;
+  height: 75px;
+}
+.mv-section .mv-svg{
+  margin: 0 auto;
+}
+.mv-section .mv-svg svg{
+  width: 100%;
+  height: 100%;
+}
+svg:not(:root){
+  overflow: hidden;
+}
+
+
+
+
 .sp-only{
   display: none; 
 }
@@ -502,7 +527,7 @@ h2{
   transition:transform .6s, opacity .6s ease, -webkit-transform .6s;
 }
 .to-success-section .success-key02{
-  background-color: burlywood;
+  background: url("/images/success_key02_pc_bg.jpg");
   background-size: cover;
   background-position: 50% 20%;
 }
@@ -530,12 +555,12 @@ h2{
   padding: 32px 10px 32px;
 }
 .to-success-section .success-key03{
-  background-color: chocolate;
+  background: url(/images/success_key03_pc_bg.jpg);
   background-size: cover;
   background-position: 50% 20%;
 }
 .to-success-section .success-key04{
-  background-color: cornflowerblue;
+  background: url(/images/success_key04_pc_bg.jpg);
   background-size: cover;
   background-position: 50% 20%;
 }
@@ -546,7 +571,7 @@ h2{
   padding: 48px 10px 47px;
 }
 .to-success-section .success-key05{
-  background-color: darkkhaki;
+  background: url(/images/success_key05_pc_bg.jpg);
   background-size: cover;
   background-position: 50% 47%;
 }
