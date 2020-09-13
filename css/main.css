@@ -461,7 +461,7 @@ h2{
   height: 100%;
 }
 .to-success-section .success-key01{
-  background-color: gray;
+  background: url("/images/success_key01_pc_bg.jpg");
   background-size: cover;
   background-position: 50% 20%;
 }
