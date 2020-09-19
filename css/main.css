@@ -67,6 +67,7 @@ img{
 svg:not(:root){
   overflow: hidden;
 }
+/* 途中 */
 
 
 
@@ -576,7 +577,197 @@ h2{
   background-position: 50% 47%;
 }
 /* 求職者に見つけてもらえる採用オウンドメディア */
-
+/* ??? */
+/* ??? */
+/* ??? */
+/* 採用オウンドメディアの運用フロー */
+.operation-flow-section {
+  padding-top: 74px;
+}
+.operation-flow-section h2{
+  margin-bottom: 40px;
+  font-size: 32px;
+}
+.operation-flow-section > p{
+  margin-bottom: 41px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 16px;
+}
+.slide-block{
+  padding: 0 15px 55px;
+}
+.slide-block .flow-main-slide {
+  position: relative;
+  max-width: 1122px;
+  margin: 0 auto 34px;
+}
+.slide-block .flow-slide {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+.slick-slider {
+  position: static;
+}
+.slick-slider {
+  display: block;
+  box-sizing: border-box;
+  user-select: none;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+element.style {
+  display: block;
+}
+.slide-block .slick-arrow.prev{
+  left: 0;
+}
+.slide-block .slick-arrow{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 43px;
+  height: 54px;
+  margin: auto;
+  z-index: 1;
+  cursor: pointer;
+}
+img{
+  border-style: none;
+}
+.slide-block .flow-slide .slick-list{
+  border-radius: 20px;
+  box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.3);
+}
+.slick-slider .slick-track, .slick-slider .slick-list{
+  transform: translate3d(0, 0, 0);
+}
+.slick-list{
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.slick-track{
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.slide-block .slick-arrow.next{
+  right: 0;
+}
+.slide-block .flow-slide-thumb-block{
+  position: relative;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 765px;
+  margin: 0 auto;
+}
+.slide-block .flow-bar{
+  position: absolute;
+  top: -59px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 695px;
+  height: 3px;
+}
+.slide-block .flow-slide-thumb{
+  width: 100%;
+}
+.slide-block .flow-slide-thumb .slick-track{
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  width: 765px !important;
+  padding: 20px 5px;
+}
+element.style {
+  width: 153px;
+}
+.slide-block .thumb-box{
+  cursor: pointer;
+}
+.slick-initialized .slick-slide{
+  display: block;
+}
+.slick-slide{
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+.slide-block .thumb-box .flow-thumb{
+  position: relative;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 95px !important;
+  margin: 0 auto;
+  float: none;
+}
+.slide-block .thumb-box .thumb-txt{
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+  color: #1e1e1e;
+  transition: color .4s;
+}
+.slick-slide img{
+  display: block;
+}
+.slide-block .thumb-box .flow-thumb img{
+  transform: scale(1, 1);
+  transition: transform .4s, -webkit-transform .4s;
+}
+.slide-block .flow-txt-box{
+  position: absolute;
+  top: 50%;
+  right: 40px;
+  transform: translate(0, -50%);
+  max-width: 560px;
+  z-index: 1;
+}
+h3{
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-size: 1.17em;
+  font-weight: bold;
+}
+.slide-block .flow-txt-box h3{
+  margin-bottom: 13px;
+  font-size: 22px;
+  font-weight: 700;
+}
+.slide-block .flow-txt-box p{
+  font-size: 16px;
+  line-height: 28px;
+}
+.slide-block .flow-txt-box p:last-of-type{
+  margin-bottom: 0;
+}
+.slide-block .flow-txt-box{
+  position: absolute;
+  top: 50%;
+  right: 40px;
+  transform: translate(0, -50%);
+  max-width: 560px;
+  z-index: 1;
+}
+.slide-block .flow-slide .slick-slide img{
+  border-radius: 20px;
+}
 
 
 
