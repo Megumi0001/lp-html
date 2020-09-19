@@ -35,6 +35,7 @@ header img{
 }
 
 /* メイン */
+/* 今の採用、当たってますか？ */
 .mv-section .mv-contents{
   display: flex;
   -webkit-box-align: center;
@@ -68,9 +69,6 @@ svg:not(:root){
   overflow: hidden;
 }
 /* 途中 */
-
-
-
 
 .sp-only{
   display: none; 
@@ -140,7 +138,7 @@ h2{
   -webkit-box-pack: end;
   justify-content: flex-end;
   width: 100%;
-  background-color: darkslateblue;
+  background: url(/images/trouble01.png);
   background-size: cover;
   background-position: 50% 50%;
 }
