@@ -126,11 +126,11 @@
         </g>
       </svg>
     </div>
-  </div>>
+  </div>
     <div class="first-read-block">
       <div class="first-read-inner is-active">
         <h1>最適人材の発掘と獲得を実現する<br>全研本社の採用オウンドメディアで<br class="sp-only">進める効率リクルーティング</h1> 
-        <p>採用オウンドメディアは、自社の認知度を上げ、採用ミスマッチを減らし、<br class="pc-only">直接採用を増やす効果があります。<br>必要性は感じていても、何から手を付けたらよいか？<br>どうすれば求める人材に見てもらえるメディアになるのか？<br>と足踏みされている担当者様も多いのではないでしょうか。<b>重要ポイントは「魅力的なコンテンツ」「継続的な運用」「キーワード選定」です。<br>全研本社が制作・運用、採用効果の最大化を全面サポートします。<br>御社の必要とする人材に当たる採用オウンドメディアを、そろそろ始めませんか？</p>
+        <p>採用オウンドメディアは、自社の認知度を上げ、採用ミスマッチを減らし、<br class="pc-only">直接採用を増やす効果があります。<br>必要性は感じていても、何から手を付けたらよいか？<br>どうすれば求める人材に見てもらえるメディアになるのか？<br>と足踏みされている担当者様も多いのではないでしょうか。<br>重要ポイントは「魅力的なコンテンツ」「継続的な運用」「キーワード選定」です。<br>全研本社が制作・運用、採用効果の最大化を全面サポートします。<br>御社の必要とする人材に当たる採用オウンドメディアを、そろそろ始めませんか？</p>
       </div>
     </div>
   </section>
@@ -413,23 +413,15 @@
             </div>
             <div aria-live="polite" class="slick-list draggable">
               <div class="slick-track" role="listbox" style="opacity: 1; width: 6720px; transform: translate3d(-4800px, 0px, 0px);">
-               ::before
-               <div class="slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" tabindex="-1" style="width: 960px;">
-                <img src="images/flow/flow01_bg_pc.png" class="change-img" alt="分析・改善">
-                <div class="flow-txt-box txt-box05">
-                  <h3>分析・改善</h3>
-                  <p>運用中の採用オウンドメディア全体のデータを分析し、改善や追加するコンテンツの指針とします。<br>採用計画や採用課題の変化にも柔軟に対応しながらコンテンツの追加を行います。</p>
-                </div>
-              </div>
                <div class="slick-slide" data-slick-index="0" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide00" style="width: 960px;">
-                <img src="images/flow/flow02_bg_pc.png" class="change-img" alt="ヒアリング">
+                <img src="images/flow/flow01_bg_pc.png" class="change-img" alt="ヒアリング">
                 <div class="flow-txt-box txt-box01">
                   <h3>ヒアリング</h3>
                   <p>御社の採用課題や採用計画、求める人物像、ビジョンや事業方針、現状の採用状況や活用中、もしくはご検討中の媒体やツールなどを詳しくヒアリングさせていただきます。<br>ご要望もぜひ、お聞かせください。</p>
                 </div>
               </div>
               <div class="slick-slide slick-current slick-active" data-slick-index="1" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide01" style="width: 960px;">
-                <img src="images/flow/flow03_bg_pc.png" class="change-img" alt="情報設計、採用マーケティング提案">
+                <img src="images/flow/flow02_bg_pc.png" class="change-img" alt="情報設計、採用マーケティング提案">
                 <div class="flow-txt-box txt-box02">
                   <h3>情報設計、採用マーケティング提案</h3>
                   <p>ヒアリング情報を元に、どのような採用オウンドメディアにするかの情報設計を行います。</p>
@@ -465,7 +457,6 @@
                   <p>御社の採用課題や採用計画、求める人物像、ビジョンや事業方針、現状の採用状況や活用中、もしくはご検討中の媒体やツールなどを詳しくヒアリングさせていただきます。<br>ご要望もぜひ、お聞かせください。</p>
                 </div>
               </div>
-               ::after 
               </div>
             </div>
             <div class="arrow next slick-arrow" style="display: block;">
@@ -473,50 +464,60 @@
             </div>
           </div>
         </div>
+        <script>
+          let slick_num = 0;
+          document.querySelector(".arrow.next").addEventListener("click",function(e){
+            console.log("click",e);
+            slick_num = slick_num+1; 
+            if(document.querySelector(".slick-track").dataset.slick_num > 4) {
+              console.log("true");
+              slick_num=0
+              }
+            document.querySelector(".slick-track").dataset.slick_num = slick_num;
+          })
+          document.querySelector(".arrow.prev").addEventListener("click",function(e){
+            console.log("click",e);
+            slick_num = slick_num-1; 
+            if(document.querySelector(".slick-track").dataset.slick_num < 0) {
+              console.log("true");
+              slick_num=4
+              }
+            document.querySelector(".slick-track").dataset.slick_num = slick_num;
+          })
+        </script>
         <div class="flow-slide-thumb-block">
           <div class="flow-bar" data-flow="1">
-            ::after
           </div>
           <div class="flow-slide-thumb slick-initialized slick-slider">
             <div aria-live="polite" class="slick-list draggable">
               <div class="slick-track" role="listbox" style="opacity: 1; width: 775px; transform: translate3d(0px 0px 0px);">
                <div class="thumb-box slick-slide slick-current slick-active" data-slick-inbox="0" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide10" style="width: 153px;">
                 <div class="flow-thumb">
-                  ::before
                   <img src="images/flow/flow01_thumb.png" alt="ヒアリング">
-                  ::after
                 </div>
                 <div class="thumb-txt">ヒアリング</div>
                </div>
                <div class="thumb-box slick-slide slick-active" data-slick-index="1" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide11" style="width: 153px;">
                 <div class="flow-thumb">
-                  ::before
                   <img src="images/flow/flow02_thumb.png" alt="情報設計、採用マーケティング提案">
-                  ::after
                 </div>
                 <div class="thumb-txt">情報設計、採用<br>マーケティング提案</div>
               </div>
                <div class="thumb-box slick-slide slick-current slick-active" data-slick-index="2" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide12" style="width: 153px;">
                 <div class="flow-thumb">
-                  ::before
                   <img src="images/flow/flow03_thumb.png" alt="コンテンツ制作">
-                  ::after
                 </div>
                 <div class="thumb-txt">コンテンツ制作</div>
               </div>
               <div class="thumb-box slick-slide slick-active" data-slick-inbox="3" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide13" style="width: 153px;">
                 <div class="flow-thumb">
-                  ::before
-                  <img src="images/flow/flow03_thumb.png" alt="公開・運用">
-                  ::after
+                  <img src="images/flow/flow04_thumb.png" alt="公開・運用">
                 </div>
                 <div class="thumb-txt">公開・運用</div>
               </div>
               <div class="thumb-box slick-slide slick-active" data-slick-index="4" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide14" style="width: 153px;">
                 <div class="flow-thumb">
-                  ::before
-                  <img src="images/flow/flow04_thumb.png" alt="分析・改善">
-                  ::after
+                  <img src="images/flow/flow05_thumb.png" alt="分析・改善">
                 </div>
                 <div class="thumb-txt">分析・改善</div>
               </div>
@@ -526,9 +527,60 @@
         </div>
       </div>
     </section>
-
-
-    <section class="price-section">price-section</section>
+    <!--価格-->
+    <section class="price-section">
+      <h2>価格</h2>
+      <p class="notice-sp-scroll sp-only">横にスクロールしてご覧ください。</p>
+      <div class="price-table-block">
+        <table>
+          <tbody>
+            <tr class="is-active">
+              <th class="standard-ttl">プラン</th>
+              <td class="standard-ttl">ブランドプロテクト<br>プラン</td>
+              <td class="standard-ttl">ベーシック<br>プラン</td>
+              <td class="standard-ttl">プレミアム<br>プラン</td>
+            </tr>
+            <tr class="is-active">
+              <th class="basic-cell">制作費用</th>
+              <td class="basic-cell">
+                <p class="price">900,000円～</p>
+              </td>
+              <td class="basic-cell">
+                <p class="price">2,500,000円～</p>
+              </td>
+              <td class="basic-cell">
+                <p class="price">3,000,000円～</p>
+              </td>
+            </tr>
+            <tr class="is-active">
+              <th class="standard-cell">月額費用</th>
+              <td class="standard-cell">
+                <p class="price">50,000円～</p>
+              </td>
+              <td class="standard-cell">
+                <p class="price">400,000円～</p>
+              </td>
+              <td class="standard-cell">
+                <p class="price">500,000円～</p>
+              </td>
+            </tr>
+            <tr class="is-active">
+              <th class="basic-cell">デザイン</th>
+              <td class="basic-cell">
+                <div class="price">テンプレートタイプ</div>
+              </td>
+              <td class="basic-cell">
+                <div class="price">セミデザイン</div>
+              </td>
+              <td class="basic-cell">
+                <div class="price">フルデザイン</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="price-note-txt">※1社様毎に合わせたオーダーメイドでのプランニングも可能です。</p>
+    </section>
     <section class="cube-section">cube-section</section>
     <section class="btn-field">btn-field</section>
     <section class="useless-txt">useless-txt</section>
