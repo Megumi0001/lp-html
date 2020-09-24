@@ -947,13 +947,13 @@ element.style {
 }
 /*カルーセル*/
 [data-slick_num="4"] {
-  transform: translate3d(-2980px, 0px, 0px) !important;
+  transform: translate3d(-3840px, 0px, 0px) !important;
 }
 [data-slick_num="3"] {
-  transform: translate3d(-2020px, 0px, 0px) !important;
+  transform: translate3d(-2880px, 0px, 0px) !important;
 }
 [data-slick_num="2"] {
-  transform: translate3d(-960px, 0px, 0px) !important;
+  transform: translate3d(-1920px, 0px, 0px) !important;
 }
 [data-slick_num="1"] {
   transform: translate3d(-960px, 0px, 0px) !important;
