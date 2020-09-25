@@ -457,34 +457,33 @@
                   <p>運用中の採用オウンドメディア全体のデータを分析し、改善や追加するコンテンツの指針とします。<br>採用計画や採用課題の変化にも柔軟に対応しながらコンテンツの追加を行います。</p>
                 </div>
               </div>
-
-              </div>
-            </div>
-            <div class="arrow next slick-arrow" style="display: block;">
-              <img src="images/icon/arrow_right.png" alt="">
             </div>
           </div>
+          <div class="arrow next slick-arrow" style="display: block;">
+            <img src="images/icon/arrow_right.png" alt="">
+          </div>
         </div>
-        <script>
-          let slick_num = 0;
-          document.querySelector(".arrow.next").addEventListener("click",function(e){
-            console.log("click",e);
-            slick_num = slick_num+1; 
-            if(document.querySelector(".slick-track").dataset.slick_num > 4) {
-              console.log("true");
-              slick_num=0
-              }
-            document.querySelector(".slick-track").dataset.slick_num = slick_num;
-          })
-          document.querySelector(".arrow.prev").addEventListener("click",function(e){
-            console.log("click",e);
-            slick_num = slick_num-1; 
-            if(document.querySelector(".slick-track").dataset.slick_num < 0) {
-              console.log("true");
-              slick_num=4
-              }
-            document.querySelector(".slick-track").dataset.slick_num = slick_num;
-          })
+      </div>
+      <script>
+        let slick_num = 0;
+        document.querySelector(".arrow.next").addEventListener("click",function(e){
+        console.log("click",e);
+        slick_num = slick_num+1; 
+        if(document.querySelector(".slick-track").dataset.slick_num > 4) {
+        console.log("true");
+        slick_num=0
+        }
+        document.querySelector(".slick-track").dataset.slick_num = slick_num;
+        })
+        document.querySelector(".arrow.prev").addEventListener("click",function(e){
+        console.log("click",e);
+        slick_num = slick_num-1; 
+        if(document.querySelector(".slick-track").dataset.slick_num < 0) {
+        console.log("true");
+        slick_num=4
+        }
+        document.querySelector(".slick-track").dataset.slick_num = slick_num;
+        })
         </script>
         <!--丸が5個並んでいる-->
         <div class="flow-slide-thumb-block">
