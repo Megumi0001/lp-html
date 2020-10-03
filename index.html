@@ -500,6 +500,20 @@
             console.log("click",e);
             document.querySelector(".slick-track").dataset.slick_num = 4;
           })
+          let target_top = document.querySelector(".para-ttl").offsetTop;
+          let window_height = window.innerHeight;
+          let target_height = document.querySelector(".para-ttl").clientHeight;
+          let start_y = target_top - window_height;
+          let end_y = target_top + target_height;
+
+          window.addEventListener('scroll',function(x){
+            console.log("scroll",start_y,end_y,window.scrollY,start_y<window.scrollY,end_y>window.scrollY);
+            if(start_y<window.scrollY && end_y>window.scrollY) {
+              let base_y = window.scrollY - start_y;    
+              console.log("hit",base_y);
+              document.querySelector(".para-ttl").style["background-position"] = "center -" + base_y + "px"
+            }
+          })
         }
         </script>
         <!--丸が5個並んでいる-->
