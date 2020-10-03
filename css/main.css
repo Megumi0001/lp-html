@@ -43,7 +43,7 @@ header img{
   width: 100%;
   height: 700px;
   margin: 0 auto;
-  background: url(/images/mv_pc.png);
+  background: url(../images/mv_pc.png);
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -138,7 +138,7 @@ h2{
   -webkit-box-pack: end;
   justify-content: flex-end;
   width: 100%;
-  background: url(/images/trouble01.png);
+  background: url(../images/trouble01.png);
   background-size: cover;
   background-position: 50% 50%;
 }
@@ -485,7 +485,7 @@ h2{
   height: 100%;
 }
 .to-success-section .success-key01{
-  background: url("/images/success_key01_pc_bg.jpg");
+  background: url("../images/success_key01_pc_bg.jpg");
   background-size: cover;
   background-position: 50% 20%;
 }
@@ -526,7 +526,7 @@ h2{
   transition:transform .6s, opacity .6s ease, -webkit-transform .6s;
 }
 .to-success-section .success-key02{
-  background: url("/images/success_key02_pc_bg.jpg");
+  background: url("../images/success_key02_pc_bg.jpg");
   background-size: cover;
   background-position: 50% 20%;
 }
@@ -554,12 +554,12 @@ h2{
   padding: 32px 10px 32px;
 }
 .to-success-section .success-key03{
-  background: url(/images/success_key03_pc_bg.jpg);
+  background: url(../images/success_key03_pc_bg.jpg);
   background-size: cover;
   background-position: 50% 20%;
 }
 .to-success-section .success-key04{
-  background: url(/images/success_key04_pc_bg.jpg);
+  background: url(../images/success_key04_pc_bg.jpg);
   background-size: cover;
   background-position: 50% 20%;
 }
@@ -570,7 +570,7 @@ h2{
   padding: 48px 10px 47px;
 }
 .to-success-section .success-key05{
-  background: url(/images/success_key05_pc_bg.jpg);
+  background: url(../images/success_key05_pc_bg.jpg);
   background-size: cover;
   background-position: 50% 47%;
 }
@@ -581,7 +581,7 @@ h2{
 .support-detail-section .para-ttl{
   margin-bottom: 52px;
   padding: 47px 10px;
-  background: url(/images/para_ttl_bg.jpg);
+  background: url(../images/para_ttl_bg.jpg);
   background-repeat: no-repeat;
 }
 .support-detail-section .para-ttl h2{
