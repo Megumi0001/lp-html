@@ -412,14 +412,7 @@
               <img src="images/icon/arrow_left.png" alt="">
             </div>
             <div aria-live="polite" class="slick-list draggable">
-              <div class="slick-track" role="listbox" style="opacity: 1; width: 6720px; transform: translate3d(-960px, 0px, 0px);">
-                <div class="slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" tabindex="-1" style="width: 960px;">
-                  <img src="images/flow/flow05_bg_pc.png" class="change-img" alt="分析・改善">
-                  <div class="flow-txt-box txt-box05">
-                    <h3>分析・改善</h3>
-                    <p>運用中の採用オウンドメディア全体のデータを分析し、改善や追加するコンテンツの指針とします。<br>採用計画や採用課題の変化にも柔軟に対応しながらコンテンツの追加を行います。</p>
-                  </div>
-                </div>
+              <div class="slick-track" data-slick_num="0" role="listbox" style="opacity: 1; width: 6720px; transform: translate3d(-960px, 0px, 0px);">
                <div class="slick-slide" data-slick-index="0" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide00" style="width: 960px;">
                 <img src="images/flow/flow01_bg_pc.png" class="change-img" alt="ヒアリング">
                 <div class="flow-txt-box txt-box01">
@@ -465,25 +458,49 @@
         </div>
       </div>
       <script>
-        let slick_num = 0;
-        document.querySelector(".arrow.next").addEventListener("click",function(e){
-        console.log("click",e);
-        slick_num = slick_num+1; 
-        if(document.querySelector(".slick-track").dataset.slick_num > 4) {
-        console.log("true");
-        slick_num=0
+        window.onload=function(){
+          let slick_num = 0;
+          document.querySelector(".arrow.next").addEventListener("click",function(e){
+            // console.log("click",e);
+            debugger;
+            slick_num = slick_num+1; 
+            console.log("before",slick_num);
+            if(slick_num > 4) {
+              console.log("after");
+              slick_num=0
+            }
+            document.querySelector(".slick-track").dataset.slick_num = slick_num;
+          })
+          document.querySelector(".arrow.prev").addEventListener("click",function(e){
+            console.log("click",e);
+            slick_num = slick_num-1; 
+            if(slick_num < 0) {
+              console.log("true");
+              slick_num=4
+            }
+            document.querySelector(".slick-track").dataset.slick_num = slick_num;
+          })
+          document.querySelector(".thumb-box[data-slick-index='0']").addEventListener("click",function(e){
+            console.log("click",e);
+            document.querySelector(".slick-track").dataset.slick_num = 0;
+          })
+          document.querySelector(".thumb-box[data-slick-index='1']").addEventListener("click",function(e){
+            console.log("click",e);
+            document.querySelector(".slick-track").dataset.slick_num = 1;
+          })
+          document.querySelector(".thumb-box[data-slick-index='2']").addEventListener("click",function(e){
+            console.log("click",e);
+            document.querySelector(".slick-track").dataset.slick_num = 2;
+          })
+          document.querySelector(".thumb-box[data-slick-index='3']").addEventListener("click",function(e){
+            console.log("click",e);
+            document.querySelector(".slick-track").dataset.slick_num = 3;
+          })
+          document.querySelector(".thumb-box[data-slick-index='4']").addEventListener("click",function(e){
+            console.log("click",e);
+            document.querySelector(".slick-track").dataset.slick_num = 4;
+          })
         }
-        document.querySelector(".slick-track").dataset.slick_num = slick_num;
-        })
-        document.querySelector(".arrow.prev").addEventListener("click",function(e){
-        console.log("click",e);
-        slick_num = slick_num-1; 
-        if(document.querySelector(".slick-track").dataset.slick_num < 0) {
-        console.log("true");
-        slick_num=4
-        }
-        document.querySelector(".slick-track").dataset.slick_num = slick_num;
-        })
         </script>
         <!--丸が5個並んでいる-->
         <div class="flow-slide-thumb-block">
@@ -492,7 +509,7 @@
           <div class="flow-slide-thumb slick-initialized slick-slider">
             <div aria-live="polite" class="slick-list draggable">
               <div class="slick-track" role="listbox" style="opacity: 1; width: 775px; transform: translate3d(0px 0px 0px);">
-               <div class="thumb-box slick-slide slick-current slick-active" data-slick-inbox="0" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide10" style="width: 153px;">
+               <div class="thumb-box slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide10" style="width: 153px;">
                 <div class="flow-thumb">
                   <img src="images/flow/flow01_thumb.png" alt="ヒアリング">
                 </div>
@@ -510,7 +527,7 @@
                 </div>
                 <div class="thumb-txt">コンテンツ制作</div>
               </div>
-              <div class="thumb-box slick-slide slick-active" data-slick-inbox="3" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide13" style="width: 153px;">
+              <div class="thumb-box slick-slide slick-active" data-slick-index="3" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide13" style="width: 153px;">
                 <div class="flow-thumb">
                   <img src="images/flow/flow04_thumb.png" alt="公開・運用">
                 </div>
